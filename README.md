@@ -19,3 +19,10 @@ For each query, there are a number of product recommendations along with their l
 Explored bi-encoders and cross-encoders for this task. Bi-Encoders, are fast and less computationally intensive but Cross-Enocders are more accurate. 
 
 ### Loss Function
+Loss function for this project was chosen to be a weighted average of RCR Loss and BCE Loss. RCR Loss itself is a weighted average of MSE Loss and ListCE Loss.
+```Loss = (1 - x) * RCR + x * BCE```
+```Loss = (1 - x) * alpha * MSE Loss + (1 - x) * (1 - alpha) ListCELoss + x * BCE Loss```
+
+### Evaluation
+The initial dataset achieved a ```NDCG@10 = 0.9196```.
+The Refined Approach achieved a ```NDCG@10 = 0.9006```
