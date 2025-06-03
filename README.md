@@ -20,7 +20,8 @@ Explored bi-encoders and cross-encoders for this task. Bi-Encoders, are fast and
 
 ### Loss Function
 Loss function for this project was chosen to be a weighted average of RCR Loss and BCE Loss. RCR Loss itself is a weighted average of MSE Loss and ListCE Loss.
-```Loss = (1 - x) * RCR + x * BCE```\n
+```Loss = (1 - x) * RCR + x * BCE```
+
 ```Loss = (1 - x) * alpha * MSE Loss + (1 - x) * (1 - alpha) ListCELoss + x * BCE Loss```
 
 ### Evaluation
