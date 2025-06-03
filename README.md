@@ -26,6 +26,6 @@ Loss function for this project was chosen to be a weighted average of RCR Loss a
 ```Loss = (1 - x) * alpha * MSE Loss + (1 - x) * (1 - alpha) ListCELoss + x * BCE Loss```
 
 ### Evaluation
-The initial dataset achieved a ```NDCG@10 = 0.9196```.
+The best approach (Cross Encoder) on the initial dataset achieved a ```NDCG@10 = 0.9196```.
 
-The Refined Approach achieved a ```NDCG@10 = 0.9006```
+The best approach (Cross Encoder) on the refined dataset achieved a ```NDCG@10 = 0.9006```
